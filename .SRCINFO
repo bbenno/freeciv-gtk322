@@ -1,0 +1,31 @@
+pkgbase = freeciv-gtk322
+	pkgdesc = A multiuser clone of the famous Microprose game of Civilization - GTK3.22 Client
+	pkgver = 3.0.1
+	pkgrel = 1
+	url = http://freeciv.org
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = gcc
+	makedepends = make
+	makedepends = libtool>=2.2
+	makedepends = curl>=7.15.4
+	makedepends = icu
+	depends = pkgconf
+	depends = glib
+	depends = atk
+	depends = pango
+	depends = gdk-pixbuf2
+	depends = lua53
+	depends = gtk3>=3.22
+	depends = imagemagick
+	provides = freeciv-server
+	provides = freeciv-gtk
+	conflicts = freeciv
+	conflicts = freeciv-git
+	conflicts = freeciv-sdl2
+	options = !libtool
+	source = http://files.freeciv.org/stable/freeciv-3.0.1.tar.xz
+	sha256sums = beda7adaebb3462797c8f090ec604c2974f15a1559fff2fb4cfff2607cb0180f
+
+pkgname = freeciv-gtk322
